@@ -21,7 +21,8 @@
     "build": "webpack --mode development",
     "dev": "webpack --mode development --watch",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "package": "npm run dist && cd dist && zip -r ../joplin-plugin-univer.jpl . && cd .."
   },
   "engines": {
     "node": ">=16"

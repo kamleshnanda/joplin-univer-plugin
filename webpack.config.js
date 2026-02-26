@@ -31,7 +31,8 @@ module.exports = {
   ],
   externals: {
     // Joplin API is provided by the host application
-    'api': 'commonjs api'
+    'api': 'commonjs api',
+    'api/types': 'commonjs api/types'
   },
   devtool: 'source-map'
 };

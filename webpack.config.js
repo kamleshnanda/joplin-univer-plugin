@@ -8,7 +8,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    library: {
+      type: 'commonjs2',
+      export: 'default'
+    }
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']

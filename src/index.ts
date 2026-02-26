@@ -12,7 +12,7 @@ import { MenuItemLocation, ToolbarButtonLocation } from 'api/types';
  * Plugin initialization function
  * Called when the plugin is loaded by Joplin
  */
-export default async function() {
+module.exports = async function() {
   console.log('Univer Plugin: Starting initialization...');
 
   try {

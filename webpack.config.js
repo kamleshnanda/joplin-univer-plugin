@@ -8,10 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: {
-      type: 'commonjs2',
-      export: 'default'
-    }
+    libraryTarget: 'commonjs2'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
@@ -20,7 +17,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true
+          }
+        },
         exclude: /node_modules/
       }
     ]
@@ -37,5 +39,8 @@ module.exports = {
     'api': 'commonjs api',
     'api/types': 'commonjs api/types'
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  optimization: {
+    minimize: false
+  }
 };

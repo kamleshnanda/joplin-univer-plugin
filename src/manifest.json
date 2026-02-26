@@ -11,9 +11,5 @@
   "keywords": ["Excel", "Spreadsheet", "Univer", "Kamlesh", "formulas", "tables"],
   "categories": ["productivity", "editor"],
   "screenshots": [],
-  "icons": {
-    "32": "icon-32.png",
-    "48": "icon-48.png"
-  },
   "permissions": ["contentScript"]
 }

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 1,
+  "id": "com.kamleshnanda.joplin.univer",
+  "app_min_version": "2.8",
+  "version": "0.1.0",
+  "name": "Univer Spreadsheet",
+  "description": "Excel-like spreadsheet plugin using Univer SDK. Embed spreadsheets with formulas directly in your notes.",
+  "author": "Kamlesh Nanda",
+  "homepage_url": "https://github.com/kamleshnanda/joplin-univer-plugin",
+  "repository_url": "https://github.com/kamleshnanda/joplin-univer-plugin",
+  "keywords": ["Excel", "Spreadsheet", "Univer", "Kamlesh", "formulas", "tables"],
+  "categories": ["productivity", "editor"],
+  "screenshots": [],
+  "icons": {
+    "32": "icon-32.png",
+    "48": "icon-48.png"
+  },
+  "permissions": ["contentScript"]
+}
